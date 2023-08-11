@@ -7,7 +7,9 @@ struct MoviesList: View {
                 movie in
                 ZStack {
                     MovieRow(movie: movie)
-                    
+                    /*NavigationLink(destination: MovieDetail(movie: movie)) {
+                        EmptyView()
+                    }*/
                 }
             }.navigationBarTitle("Movie Catalog", displayMode: .large)
         }
